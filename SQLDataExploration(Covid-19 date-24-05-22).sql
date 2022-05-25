@@ -1,3 +1,10 @@
+/*
+Covid-19 Data Exploration
+
+skills used : joins, CTE's, Temp Tables, Windows Functions, aggregate Function, Creating views, Converting data trypes
+*/
+
+
 select *
 from project..CovidDeaths
 where continent is not null
@@ -7,7 +14,7 @@ order by 3,4
 --from project..vacination
 --order by 3,4
 
---Selecting Data Which i will be using
+--Selecting Data 
 select location, date, total_cases, new_cases, total_deaths, population
 from project..CovidDeaths
 where continent is not null
@@ -22,7 +29,7 @@ and continent is not null
 order by 1,2
 
 --Looking At Total cases Vs Population in India
---showing % of population got covid in India
+--shows % of population got covid in India
 select location, date, total_cases, population, (total_cases/population)*100 as PercentofPopulationInfected
 from project..CovidDeaths
 where location like '%india%'
