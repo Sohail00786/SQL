@@ -1,7 +1,7 @@
 /*
 Covid-19 Data Exploration
 
-skills used : joins, CTE's, Temp Tables, Windows Functions, aggregate Function, Creating views, Converting data trypes
+skills used : joins, CTE's, Temp Tables, Windows Functions, aggregate Function, Creating views, Converting data types
 */
 
 
